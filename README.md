@@ -24,12 +24,15 @@ This app will run in the browser and dynamically updated HTML and CSS powered by
 
 ## Links
 
-Website URL     - 
-Repository URL  - 
+Website URL     -  https://aungphyohan5.github.io/Password-Generator/
+
+Repository URL  -  https://github.com/Aungphyohan5/Password-Generator
 
 ## Screenshot
 
 ![App Screenshot](./Assets/screen-recording.gif)
+![App Screenshot](./Assets/screenshot.png)
+
 
 ## License
 

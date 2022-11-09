@@ -26,7 +26,7 @@ function generatePassword() {
   var numberic = ["0123456789"]
   var specialCharacters = ["~!@#$%^&*()"]
 
-  //confirmation for character type
+  //confirmation for character types
   var userChooseLowerCase = confirm("Would you like to include the lowercase?")
   var userChooseUppCase = confirm("Would you like to include the uppercase?")
   var userChooseNum = confirm("Would you like to include the number?")
