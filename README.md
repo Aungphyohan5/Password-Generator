@@ -14,12 +14,11 @@ This app will run in the browser and dynamically updated HTML and CSS powered by
 
 ## Tasks Completed
 
-- 
-- 
-- 
-- 
-- 
-- 
+- Used window.Prompt for password criteria
+- Used window.Prompt for length of the password
+- Asked the user for character type to include in the password using window.Confirm
+- Used loop(for) to generate the final password
+- Added comments in script.js
 
 
 
@@ -30,7 +29,7 @@ Repository URL  -
 
 ## Screenshot
 
-![App Screenshot](./assets/images/Screenshot.png)
+![App Screenshot](./Assets/screen-recording.gif)
 
 ## License
 
