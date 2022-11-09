@@ -3,7 +3,7 @@ var generateBtn = document.querySelector("#generate");
 
 
 function generatePassword() {
-  var userInput = window.prompt("How long would like to set the password betwenn 8 and 128?")
+  var userInput = window.prompt("What is the desired length of the password to be? The password should be between 8 and 128.")
   console.log(userInput)
 
 
@@ -26,47 +26,47 @@ function generatePassword() {
   var specialCharacters = ["~!@#$%^&*()"]
 
 
-  var userChooseLC = confirm("Would you like to include the lowercase?")
-  var userChooseUC = confirm("Would you like to include the uppercase?")
+  var userChooseLowerCase = confirm("Would you like to include the lowercase?")
+  var userChooseUppCase = confirm("Would you like to include the uppercase?")
   var userChooseNum = confirm("Would you like to include the number?")
-  var userChooseSC = confirm("Would you like to include the special characters?")
+  var userChooseSpecial = confirm("Would you like to include the special characters?")
 
 
 
-  if (userChooseLC || userChooseNum || userChooseSC || userChooseUC) {
+  if (userChooseLowerCase || userChooseNum || userChooseSpecial || userChooseUppCase) {
     alert("Thank you")
   } else {
-    alert("One character type must be selected")
+    alert("At least one character type must be selected")
     return
   }
-  var selectedPW = [];
+  var desiredPassword = [];
 
-  if (userChooseLC === true) {
-    selectedPW += (lowerCase)
+  if (userChooseLowerCase === true) {
+    desiredPassword += (lowerCase)
   }
 
 
-  if (userChooseUC === true) {
-    selectedPW += (upperCase)
+  if (userChooseUppCase === true) {
+    desiredPassword += (upperCase)
   }
 
 
   if (userChooseNum === true) {
-    selectedPW += (numberic)
+    desiredPassword += (numberic)
   }
 
 
-  if (userChooseSC === true) {
-    selectedPW += (specialCharacters)
+  if (userChooseSpecial === true) {
+    desiredPassword += (specialCharacters)
   }
-  console.log(selectedPW);
+  console.log(desiredPassword);
 
 
   var password = [];
 
   for (var i = 1; i <= userInput; i++) {
-    var randomPw = Math.floor(Math.random() * selectedPW.length + 1);
-    password += selectedPW.charAt(randomPw)
+    var randomPw = Math.floor(Math.random() * desiredPassword.length + 1);
+    password += desiredPassword.charAt(randomPw)
   }
   return password;
 }
