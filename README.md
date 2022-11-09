@@ -30,8 +30,8 @@ Repository URL  -  https://github.com/Aungphyohan5/Password-Generator
 
 ## Screenshot
 
-![App Screenshot](./Assets/screen-recording.gif)
-![App Screenshot](./Assets/screenshot.png)
+![App Screenshot](./Assets/images/screen-recording.gif)
+![App Screenshot](./Assets/images/screenshot.png)
 
 
 ## License
